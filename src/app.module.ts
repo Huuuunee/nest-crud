@@ -17,7 +17,8 @@ import { UsersModule } from './users/users.module';
       password: process.env.DB_PASS,
       database: "Practice",
       entities: [UserEntity],
-      synchronize: true,
+      synchronize: false,
+      migrationsRun: false
     }),
     UsersModule,
   ],
